@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arreglos</title>
+</head>
+<body>
+    <h1>Arreglos de suculentas</h1>
+    <p>Te presentamos nuestros modelos disponibles para este mes de Abril.</p>
+    
+    <img src="../../img/IMG-20250404-WA0013.jpg" alt="Arreglo 1" width="200" height="200"><br>
+    <img src="../../img/IMG-20250404-WA0014.jpg" alt="Arreglo 2" width="200" height="200"><br>
+    <a href="../../index.html ">Volver a la página de inicio</a><br>"
+   
+    <hr>
+    <h2>Contacto</h2>
+    <h4>(02) 2963-369</h4>
+    <h4>099 999 9999 / 098 999 9999</h4>
+    <h4>Ruta Viva / Pifo</h4>
+    <h4>Quito - Ecuador</h4>
+</body>
+</html>
