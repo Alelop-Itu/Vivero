@@ -1,26 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Viewport para dispositivos móviles-->
     <title>Vivero Roseta</title>
-    <img src="img/logo.jpg" alt="Vivero Roseta" width="200" height="200"><br>
-</head>
-<body>
-    <h1> Vivero Roseta</h1>
+    <link rel="stylesheet" href="estilos/estilos.css"> <!--Enlace a CSS-->
+    <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon" href="img/icono.jpg">
+    <!--Coloca ícono en la página-->
 
-    <p>En nuetro vivero ofrecemos todo tipo suculentas y productos orgánicos </p> <br>
-    <p> Revisa nuestra sección de servicios</p> <br>
-    <hr>
-    <h2> Inicio</h2>
-    <a href="paginas/Arreglos/arreglos">Arreglos</a><br>
-    <a href="paginas/Productos-organicos/productos orgánicos">Productos orgánicos</a>
-    <hr>
-    <h2> Contacto</h2>
-    <h4> (02) 2963-369 </h4>
-    <h4> 099 999 9999 / 098 999 9999 </h4>
-    <h4> Ruta Viva / Pifo </h4>
-    <h4> Quito - Ecuador </h4>
+</head>
+
+<body>
+    <div class="contenedor-general">
+
+        <header> <!--Encabezado-->
+            <h1> Vivero <span>Roseta</span></h1> <!--Título página-->
+            <h3>En nuetro vivero ofrecemos todo tipo suculentas y productos orgánicos </h3> <!--Subtítulo página-->
+            <img src="img/logo.jpg" alt="Vivero Roseta" width="200" height="200" id="logo"> <!--Logo de la página-->
+
+            <!--Sección navegación-->
+            <section class="nav">
+                <div>
+                    <nav>
+                        <a href="#" id="Inicio">Inicio</a>
+                        <a href="paginas/Arreglos/arreglos" id="arreglos">Arreglos</a>
+                        <a href="paginas/Productos-organicos/productos orgánicos" id="productos">Productos orgánicos</a>
+                        <a href="#" id="novedades">Novedades</a>
+                        <a href="#" id="Ubicacion">Ubicación</a>
+                    </nav>
+                </div>
+            </section>
+
+        </header>
+
+
+        <!--Inicio sección Acerca de-->
+        <section id="acerca-de">
+            <div>
+                <div class="contenedor">
+                    <!--Img Acerca de-->
+                    <img src="img/1.jpg" alt="arreglo suculenta" width="300" height="300" class="img-acerca-de">
+                    <img src="img/3.jpg" alt="arreglo suculenta" width="300" height="300" class="img-acerca-de">
+                    <img src="img/2.jpg" alt="arreglo suculenta" width="300" height="300" class="img-acerca-de">
+
+                </div>
+
+                <!--Sección reseña-->
+                <article>
+                    <h3> Acerca de </h3>
+                    <p>En el corazón del Valle de los Chillos, hace cinco años floreció un pequeño paraíso inspirado por
+                        la admirable resiliencia y delicada belleza de la naturaleza: un vivero que nació del amor
+                        profundo por las suculentas, esas joyas verdes que guardan vida incluso en las condiciones más
+                        difíciles. Cada rincón de este espacio respira armonía, donde las manos cuidadosas que lo
+                        fundaron han cultivado no solo plantas, sino también esperanza, gratitud y asombro ante la magia
+                        de lo natural.</p>
+                    <p>Te invitamos a descubrir la ternura y elegancia de nuestros arreglos de suculentas, elaborados
+                        con un toque artístico y un alma apasionada. Además, nuestro catálogo de productos orgánicos
+                        —cosechados y creados con respeto a la tierra— espera por ti. Ven y déjate envolver por este
+                        jardín de sueños, donde la vida florece despacio, pero con fuerza y encanto.</p>
+                </article>
+            </div>
+        </section>
+
+        <!--Pie de página-->
+        <footer>
+            <h4> (02) 2963-369 </h4>
+            <h4> 099 999 9999 / 098 999 9999 </h4>
+            <h4>Todos los derechos reservados</h4>
+            <h4>Quito - Ecuador </h4>
+
+        </footer>
+
+    </div>
 
 </body>
+
 </html>
