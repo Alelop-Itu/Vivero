@@ -1,24 +1,58 @@
 /*Selector universal*/
 * {
-    margin: 10px;
-    /*margen*/
-    padding: 5px;
-    /*margen interno*/
+    margin: 0; /*Elimina margen por defecto*/
+    padding: 0; /*Elimina márgenes por defecto*/
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
-    background-color: #FFFFFF;
+}
+ /*Estilo para body*/
+body {
+    font-family: "Open Sans", Arial, Sans-serif;
+    font-size: 16px;
 }
 
-/*Contenedor padre para contener el tamaño de todo el contenido*/
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
-/*Encabezado*/
-header {
+/*Estilo bloque contenedor*/
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
     text-align: center;
-    /*Alinea el texto al centro */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+/*Estilo bloque header*/
+header {
+    width: 100%;
+    background: url(../img/fondo-vivero.jpg) #45b33b; /*Fondo de imagen*/
+    background-size: cover;     
+    background-attachment: fixed;
+    background-position: center 0;
+}
+
+/*Estilo header, bloque contenedor*/
+header .contenedor {
+    position: relative;
+    height: 500px;
+}
+
+/*Estilo header, bloque menú*/
+header .menu {
+    width: 100%;
+    text-align: center
+}
+
+/*Estilo nav*/
+a:hover {
+    background-color: #43A047;
+    text-decoration-line: underline;
+    text-align: center;
+    color: #ffffff;
+    margin: 5px;
 }
 
 h1 {
@@ -33,58 +67,31 @@ h3 {
     margin: 20px 0;
 }
 
-/*Contenedor principal body*/
-.contenedor {
-    display: flex;
-    /*Flexbox para alinear los elementos en fila */
-    flex-wrap: wrap;
-    /*Permite que los elementos se ajusten a la siguiente línea si no hay suficiente espacio */
+/*Estilo bloque imágenes*/
+.muestrario {
+    margin: 20px auto;
+    padding: 10px;
+    display: flex; /*Flexbox para alinear los elementos en fila */
+    flex-wrap: wrap; /*Permite que los elementos se ajusten a la siguiente línea si no hay suficiente espacio */
     justify-content: center;
-    background-color: #C2185B;
-    gap: 20px;
+    background: url(../img/textura-valla.jpg); /*Fondo de imagen*/
+    gap: 50px; /*Espacio entre elementos*/
     /*Espacio entre los elementos */
 }
 
-.img-acerca-de {
+.reseña p {
     width: 100%;
-    height: auto;
-    max-width: 300px;
-    /* o el ancho máximo que prefieras */
-    display: block;
-    /*Asegura que la imagen sea un bloque */
-}
-
-.nav nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #524e4e23;
-}
-
-p {
     text-align: center;
+    justify-content: center;        
     margin: 10px auto;
     max-width: 800px;
-}
-
-a:hover {
-    background-color: #43A047;
-    text-decoration-line: underline;
-    text-align: center;
-    color: #ffffff;
-    margin: 10px;
 }
 
 footer {
     display: flex;
     justify-content: center;
-    text-align: center;
-    font-size: 10px;
+    text-align: justify;
+    font-size: 13px;
     margin: 10px auto;
     max-width: 800px;
 }
