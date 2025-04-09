@@ -22,11 +22,10 @@
                 <a href="#" id="novedades">Novedades</a>
                 <a href="#" id="Ubicacion">Ubicación</a>
             </nav>
-            <div class="titulo">
-                <h1> Vivero <span>Roseta</span></h1> <!--Título página-->
+            <div class="texto">
+                <h1 class="nombre"> Roseta <span>Vivero</span></h1> <!--Título página-->
                 <h3>En nuestro vivero ofrecemos todo tipo suculentas y productos orgánicos </h3>
                 <!--Subtítulo página-->
-                <img src="img/logo.jpg" alt="Vivero Roseta" width="200" height="200" id="logo">
                 <!--Logo de la página-->
             </div>
         </div>
@@ -35,28 +34,32 @@
 
     <!--Inicio sección Acerca de-->
     <section class="main">
-        <section class="muestrario"> <!--Inicio muestrario-->
+        <section class="muestrario" id="muestrario"> <!--Inicio muestrario-->
             <div class="contenedor">
-                <!--Img Acerca de-->
-                <img src="img/1.jpg" alt="arreglo suculenta" width="300" height="300" class="img-acerca-de">
-                <img src="img/3.jpg" alt="arreglo suculenta" width="300" height="300" class="img-acerca-de">
-                <img src="img/2.jpg" alt="arreglo suculenta" width="300" height="300" class="img-acerca-de">
+                <div class="foto"><!--Img Acerca de-->
+                    <img src="img/1.jpg" alt="arreglo suculenta" width="300" height="300" class="img-acerca-de">
+                    <img src="img/3.jpg" alt="arreglo suculenta" width="300" height="300" class="img-acerca-de">
+                    <img src="img/2.jpg" alt="arreglo suculenta" width="300" height="300" class="img-acerca-de">
+                </div>
             </div>
         </section> <!--Fin muestrario-->
 
         <section class="reseña"><!--Inicio reseña-->
-            <article>
-                <h3> Acerca de </h3>
-                <p>En el corazón del Valle de los Chillos, hace cinco años floreció un pequeño paraíso inspirado por
-                    la admirable resiliencia y delicada belleza de la naturaleza: un vivero que nació del amor
-                    profundo por las suculentas, esas joyas verdes que guardan vida incluso en las condiciones más
-                    difíciles. Cada rincón de este espacio respira armonía, donde las manos cuidadosas que lo
-                    fundaron han cultivado no solo plantas, sino también esperanza, gratitud y asombro ante la magia
-                    de lo natural.</p>
-                <p>Te invitamos a descubrir la ternura y elegancia de nuestros arreglos de suculentas, elaborados
-                    con un toque artístico y un alma apasionada. Además, nuestro catálogo de productos orgánicos
-                    —cosechados y creados con respeto a la tierra— espera por ti. Ven y déjate envolver por este
-                    jardín de sueños, donde la vida florece despacio, pero con fuerza y encanto.</p>
+            <article class="texto">
+                <h3 class="acerca"> Acerca de </h3>
+                <div class="parrafos">
+                    <p>En el corazón del Valle de los Chillos, hace cinco años floreció un pequeño paraíso inspirado por
+                        la admirable resiliencia y delicada belleza de la naturaleza: un vivero que nació del amor
+                        profundo por las suculentas, esas joyas verdes que guardan vida incluso en las condiciones más
+                        difíciles. Cada rincón de este espacio respira armonía, donde las manos cuidadosas que lo
+                        fundaron han cultivado no solo plantas, sino también esperanza, gratitud y asombro ante la magia
+                        de lo natural.</p>
+                    <br>
+                    <p>Te invitamos a descubrir la ternura y elegancia de nuestros arreglos de suculentas, elaborados
+                        con un toque artístico y un alma apasionada. Además, nuestro catálogo de productos orgánicos
+                        —cosechados y creados con respeto a la tierra— espera por ti. Ven y déjate envolver por este
+                        jardín de sueños, donde la vida florece despacio, pero con fuerza y encanto.</p>
+                </div>
             </article>
         </section> <!--Fin reseña-->
 
@@ -64,11 +67,17 @@
 
     <!--Pie de página-->
     <footer>
-        <h4> (02) 2963-369 </h4>
-        <h4> 099 999 9999 / 098 999 9999 </h4>
-        <h4>Todos los derechos reservados</h4>
-        <h4>Quito - Ecuador </h4>
-
+        <section class="foot">
+          <!--  <div class="logo">
+                <img src="img/logo.jpg" alt="logo" width="150" height="150"> 
+            </div>-->
+            <div class="texto">
+                <h4> (02) 2963-369 </h4>
+                <h4> 099 999 9999 / 098 999 9999 </h4>
+                <h4>Todos los derechos reservados</h4>
+                <h4>Quito - Ecuador </h4>
+            </div>
+        </section>
     </footer>
 
     </div>

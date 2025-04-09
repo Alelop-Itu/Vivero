@@ -1,97 +1,201 @@
 /*Selector universal*/
 * {
-    margin: 0; /*Elimina margen por defecto*/
-    padding: 0; /*Elimina márgenes por defecto*/
+    margin: 0;
+    /*Elimina margen por defecto*/
+    padding: 0;
+    /*Elimina márgenes por defecto*/
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
- /*Estilo para body*/
+
+/*Estilo para body*/
 body {
     font-family: "Open Sans", Arial, Sans-serif;
-    font-size: 16px;
+    font-size: 18px;
+    color: rgb(32, 30, 30);
 }
 
 /*Estilo bloque contenedor*/
+/*Rectángulo por encima del header*/
 .contenedor {
     width: 90%;
     max-width: 1000px;
     margin: auto;
     overflow: hidden;
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
+    /*Evita que el contenido se desborde*/
+    /* position: absolute;*/
 }
 
 /*Estilo bloque header*/
+/*rectángulo detrás del contenedor*/
 header {
     width: 100%;
-    background: url(../img/fondo-vivero.jpg) #45b33b; /*Fondo de imagen*/
-    background-size: cover;     
+    background: url(../img/fondo-suculenta.jpg) #45b33b;
+    /*Fondo de imagen*/
+    background-size: cover;
     background-attachment: fixed;
+    /*Fondo fijo*/
     background-position: center 0;
 }
 
 /*Estilo header, bloque contenedor*/
+/*?*/
 header .contenedor {
     position: relative;
-    height: 500px;
+    height: 600px;
 }
 
 /*Estilo header, bloque menú*/
+/*Fondo menú*/
 header .menu {
-    width: 100%;
-    text-align: center
+    width: 100% auto;
+    text-align: center;
+    background-color: #ebe1e1;
+    /*Color de fondo*/
+    opacity: 0.7;
+    font-size: 35px;
+    font-weight: 300;
+    margin: 35px;
+    position: relative;
 }
 
-/*Estilo nav*/
-a:hover {
-    background-color: #43A047;
-    text-decoration-line: underline;
-    text-align: center;
-    color: #ffffff;
-    margin: 5px;
-}
-
-h1 {
-    text-align: center;
-    font-size: 50px;
-    /*Tamaño de la fuente*/
-}
-
-h3 {
-    text-align: center;
+header .menu a {
+    /*Diseño Fuentes*/
+    color: rgb(32, 30, 30);
     font-size: 20px;
-    margin: 20px 0;
+    font-weight: 300;
+    margin: 40px 20px;
+    text-decoration: none;
+    padding: 10px;
+    position: relative;
+}
+
+header .menu a:hover {
+    /*Diseño subclase*/
+    text-decoration: underline;
+    color: rgb(153, 10, 82);
+}
+
+header .texto {
+    /*Diseño h1*/
+    width: 100% auto;
+    /*auto ayuda a centrar en el contenedor*/
+    color: rgb(32, 30, 30);
+    position: absolute;
+    top: 40%;
+    margin-top: 25px;
+    background-color: #ebe1e1;
+    opacity: 0.7;
+}
+
+header .texto .nombre {
+    font-size: 70px;
+    font-weight: 900;
+}
+
+header .texto .nombre span {
+    font-weight: 300;
+}
+
+header .texto h3 {
+    /*Diseño h3*/
+    font-weight: 300;
+    font-size: 25px;
+    font-style: italic;
+}
+
+.main {
+    background-image: url(../img/textura-blanco.avif);
+    background-repeat: repeat;
 }
 
 /*Estilo bloque imágenes*/
 .muestrario {
     margin: 20px auto;
-    padding: 10px;
-    display: flex; /*Flexbox para alinear los elementos en fila */
-    flex-wrap: wrap; /*Permite que los elementos se ajusten a la siguiente línea si no hay suficiente espacio */
-    justify-content: center;
-    background: url(../img/textura-valla.jpg); /*Fondo de imagen*/
-    gap: 50px; /*Espacio entre elementos*/
-    /*Espacio entre los elementos */
+    padding: 15px;
 }
 
-.reseña p {
+main .muestrario .contenedor {
+    overflow: visible;
+    /*Evita que el contenido se desborde*/
+    position: relative;
+    /*Posiciona el contenedor*/
+    margin: 0 auto;
+    /*Centrar el contenedor*/
+    padding: 0;
     width: 100%;
-    text-align: center;
-    justify-content: center;        
-    margin: 10px auto;
-    max-width: 800px;
+    max-width: 1000px;
+}
+
+.main .muestrario .foto {
+    width: 100% auto;
+    position: relative;
+    top: -50px;
+    z-index: 0;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    /*Flexbox para alinear los elementos*/
+    flex-wrap: wrap;
+    /*Permite que los elementos se ajusten a la pantalla*/
+    gap: 50px;
+}
+
+.reseña {
+    /*contenedor reseña*/
+    width: 90% auto;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center 0;
+}
+
+.reseña .texto {
+    /*Diseño bloque texto*/
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    opacity: 0.9;
+}
+
+.reseña .acerca {
+    /*Diseño h3 texto - acerca de*/
+    margin: 10px;
+    font-size: 30px;
+}
+
+.reseña .parrafos {
+    /*Diseño párrafos - acerca de*/
+    margin: 10px;
+    padding: 5px;
+    text-align: left;
 }
 
 footer {
-    display: flex;
+    /*Contenedor pie de página*/
+    margin: 10px auto;
+    padding: 5px;
     justify-content: center;
     text-align: justify;
-    font-size: 13px;
-    margin: 10px auto;
-    max-width: 800px;
+    background-color: rgb(156, 161, 156);
+    opacity: 0.8;
 }
+
+footer .texto {
+    display: flex;
+    justify-content: space-around;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 16px;
+    margin: 10px;
+    padding: 5px;
+    gap: 40px;
+    position: relative;
+  
+}
+
+/*.foot .logo {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: right;
+}*/
