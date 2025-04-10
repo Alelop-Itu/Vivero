@@ -1,146 +1,191 @@
 /*Selector universal*/
 * {
-    margin: 0;
     /*Elimina margen por defecto*/
-    padding: 0;
+    margin: 0;
     /*Elimina márgenes por defecto*/
+    padding: 0;
+    /*Chrome y Safari*/
     -webkit-box-sizing: border-box;
+    /*Firefox*/
     -moz-box-sizing: border-box;
+    /*Edge, Safari, Chrome , Opera*/
     box-sizing: border-box;
 }
 
 /*Estilo para body*/
 body {
+    /*Tipo de letra*/
     font-family: "Open Sans", Arial, Sans-serif;
+    /*Tamaño de fuente*/
     font-size: 18px;
+    /*Color de letra*/
     color: rgb(32, 30, 30);
 }
 
 /*Estilo bloque contenedor*/
 /*Rectángulo por encima del header*/
 .contenedor {
+    /*ancho del contenedor*/
     width: 90%;
+    /*Anchura máxima*/
     max-width: 1000px;
+    /*Para adaptar el margen*/
     margin: auto;
+    /*Oculta desbordamiento del contenido*/
     overflow: hidden;
-    /*Evita que el contenido se desborde*/
-    /* position: absolute;*/
 }
 
 /*Estilo bloque header*/
 /*rectángulo detrás del contenedor*/
 header {
+    /*anccho contenedor*/
     width: 100%;
+    /*fondo del contenedor*/
     background: url(../img/fondo-suculenta.jpg) #45b33b;
-    /*Fondo de imagen*/
+    /*cover para que la imagen no se deforme al cambiar tamaños*/
     background-size: cover;
-    background-attachment: fixed;
-    /*Fondo fijo*/
+    /* La imagen de fondo se mueve cuando se hace scroll.*/
+    background-attachment: scroll;
+    /*Establece posición inicial de la imagen de fondo*/
     background-position: center 0;
 }
 
 /*Estilo header, bloque contenedor*/
 /*?*/
 header .contenedor {
+    /*Define cómo se posiciona el contenedor dentro de la página*/
+    /*relative: respecto a la posición original*/
     position: relative;
+    /*Tamaño contenedor*/
     height: 600px;
 }
 
 /*Estilo header, bloque menú*/
 /*Fondo menú*/
 header .menu {
+    /*ancho contenedor*/
     width: 100% auto;
+    /*alinea el texto al centro*/
     text-align: center;
+    /*fondo contenedor*/
     background-color: #ebe1e1;
-    /*Color de fondo*/
+    /*Opacidad del contenedor*/
     opacity: 0.7;
     font-size: 35px;
     font-weight: 300;
     margin: 35px;
     position: relative;
+    /*brinda margen adicional en la parte baja*/
+    padding-bottom: 15px;
 }
 
+/*Texto dentro del contenedor menú*/
+/*Al texto sin señalar*/
 header .menu a {
-    /*Diseño Fuentes*/
     color: rgb(32, 30, 30);
     font-size: 20px;
+    /*ancho del texto*/
     font-weight: 300;
     margin: 40px 20px;
+    /*Evita que tenga una línea por debajo siempre*/
     text-decoration: none;
     padding: 10px;
     position: relative;
 }
 
+/*Texto dentro del menú*/
+/*Al texto al señalar*/
+/*Diseño subclase*/
 header .menu a:hover {
-    /*Diseño subclase*/
+    /*Línea bajo el texto*/
     text-decoration: underline;
+    /*Volver a la línea punteada*/
+    /*text-decoration-style: dashed;*/
     color: rgb(153, 10, 82);
 }
 
+/*Contenedor H1 y h3*/
 header .texto {
-    /*Diseño h1*/
-    width: 100% auto;
     /*auto ayuda a centrar en el contenedor*/
+    width: 100% auto;
     color: rgb(32, 30, 30);
     position: absolute;
+    /*Mueve al contenedor hacia arriba desde la base del contenedor*/
     top: 40%;
+    /*Mueve al contenedor desde arriba*/
     margin-top: 25px;
     background-color: #ebe1e1;
     opacity: 0.7;
 }
 
+/*Modifica H1*/
 header .texto .nombre {
     font-size: 70px;
     font-weight: 900;
+    margin-bottom: 5px;
+    /*Brinda margen desde la izq*/
+    margin-left: 20px;
+    /*text-decoration: underline;*/
 }
 
+/*H3 Vivero*/
 header .texto .nombre span {
     font-weight: 300;
 }
 
-header .texto h3 {
-    /*Diseño h3*/
+/*Diseño h3*/
+header .texto .nombre2 {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
     font-weight: 300;
     font-size: 25px;
+    /*Cursiva*/
     font-style: italic;
 }
 
+/*Contenedor main, bajo encabezado*/
 .main {
+    /*Imagen de fondo*/
     background-image: url(../img/textura-blanco.avif);
+    /*La imagen de fondo se repite en el eje x / y*/
     background-repeat: repeat;
 }
 
-/*Estilo bloque imágenes*/
+/*Estilo contenedor imágenes*/
 .muestrario {
-    margin: 20px auto;
-    padding: 15px;
+    /*Espacio entre contenedores*/
+    margin: 30px auto;
+    padding: 25px;
 }
 
-main .muestrario .contenedor {
-    overflow: visible;
-    /*Evita que el contenido se desborde*/
+/*Contenedor interior imágenes*/
+.main .muestrario .contenedor {
+    /*evita que el contenido ACERCA -DE , suba*/
     position: relative;
     /*Posiciona el contenedor*/
-    margin: 0 auto;
+    margin-top: 10px;
     /*Centrar el contenedor*/
-    padding: 0;
-    width: 100%;
+    padding-top: 5px;
+    width: 90%;
     max-width: 1000px;
 }
 
 .main .muestrario .foto {
     width: 100% auto;
     position: relative;
-    top: -50px;
-    z-index: 0;
-    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5);
+    /*visualmente genera la sombra*/
+    top: -10px;
+    box-shadow: 10px 10px 10px 10px rgba(224, 29, 175, 0.5);
+     /*Flexbox para alinear los elementos*/
     display: flex;
-    /*Flexbox para alinear los elementos*/
+   /*Permite que los elementos se ajusten a la pantalla*/
     flex-wrap: wrap;
-    /*Permite que los elementos se ajusten a la pantalla*/
+    /*separación entre elementos*/
     gap: 50px;
 }
 
+/*contenedor acerca - de*/
 .reseña {
     /*contenedor reseña*/
     width: 90% auto;
@@ -149,53 +194,58 @@ main .muestrario .contenedor {
     background-position: center 0;
 }
 
+
+/*Diseño bloque texto*/
 .reseña .texto {
-    /*Diseño bloque texto*/
-    width: 90%;
+    width: 100%;
     max-width: 1000px;
     margin: auto;
     overflow: hidden;
     opacity: 0.9;
 }
 
-.reseña .acerca {
-    /*Diseño h3 texto - acerca de*/
-    margin: 10px;
-    font-size: 30px;
+/*Diseño h3 texto - acerca de - img*/
+.reseña .texto1,
+.reseña .texto2 {
+    /*Modifica el contenedor para dividirlo en 2*/
+    width: 50%;
+    /*Permite que la imagen pueda ubicarse junto al texto*/
+    float: right;
 }
 
+/*Diseño título acerca de*/
+.reseña .acerca {
+    font-size: 45px;
+    font-weight: 300;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+/*Diseño párrafos - acerca de*/
 .reseña .parrafos {
-    /*Diseño párrafos - acerca de*/
-    margin: 10px;
-    padding: 5px;
+    /*borde punteado*/
+    border: 10px dotted rgb(114, 106, 106);
+    margin: 30px;
+    padding: 20px;
+    font-size: 25px;
     text-align: left;
 }
 
-footer {
-    /*Contenedor pie de página*/
-    margin: 10px auto;
-    padding: 5px;
-    justify-content: center;
-    text-align: justify;
-    background-color: rgb(156, 161, 156);
-    opacity: 0.8;
+Contenedor pie de página*/ footer {
+    margin: 30px;
+    padding: 10px;
 }
 
+/*Texto pie de página*/
 footer .texto {
+    margin-top: 30px;
+    padding: 15px;
+    /*posiciona elementos en fila*/
     display: flex;
-    justify-content: space-around;
-    justify-content: space-around;
-    align-items: center;
+    /*Centrar contenidos*/
+   justify-content: space-around;
     font-size: 16px;
-    margin: 10px;
-    padding: 5px;
-    gap: 40px;
+    gap: 30px;
     position: relative;
-  
+    background-color: #a8b1a6;
 }
-
-/*.foot .logo {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: right;
-}*/
