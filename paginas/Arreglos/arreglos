@@ -1,23 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arreglos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Viewport para dispositivos móviles-->
+    <title>Vivero Roseta</title>
+    <link rel="stylesheet" href="../../estilos/estilos.css"> <!--Enlace a CSS-->
+    <link rel="shortcut icon" href="../../img/logo.jpg" type="image/x-icon" href="img/icono.jpg">
+    <!--Coloca ícono en la página-->
+
 </head>
+
 <body>
-    <h1>Arreglos de suculentas</h1>
-    <p>Te presentamos nuestros modelos disponibles para este mes de Abril.</p>
-    
-    <img src="../../img/IMG-20250404-WA0013.jpg" alt="Arreglo 1" width="200" height="200"><br>
-    <img src="../../img/IMG-20250404-WA0014.jpg" alt="Arreglo 2" width="200" height="200"><br>
-    <a href="../../index.html ">Volver a la página de inicio</a><br>"
-   
-    <hr>
-    <h2>Contacto</h2>
-    <h4>(02) 2963-369</h4>
-    <h4>099 999 9999 / 098 999 9999</h4>
-    <h4>Ruta Viva / Pifo</h4>
-    <h4>Quito - Ecuador</h4>
+
+    <header> <!--Encabezado-->
+        <div class="contenedor">
+            <nav class="menu">
+                <a href="../../index.html" id="Inicio">Inicio</a>
+                <a href="#" id="arreglos">🌸Arreglos</a>
+                <a href="../productos-organicos/productos" id="productos">Productos orgánicos</a>
+                <a href="#" id="novedades">Novedades</a>
+                <a href="#" id="Ubicacion">Ubicación</a>
+            </nav>
+            <div class="texto">
+                <h1 class="nombre"> Roseta <span>Vivero</span></h1> <!--Título página-->
+                <h3 class="nombre2">Cada planta ha sido cuidada con dedicación, bajo el sol y la brisa suave que las hace fuertes y hermosas, listas para conquistar corazones amantes de la naturaleza.</h3>
+                <!--Subtítulo página-->
+            </div>
+        </div>
+    </header>
+
+
+    <!--Inicio sección Acerca de-->
+    <section class="main">
+        <section class="muestrario" id="muestrario"> <!--Inicio muestrario-->
+            <div class="contenedor">
+                <div class="foto"><!--Img Acerca de-->
+                    <img src="../../img/3arreglo.jpg" alt="arreglo suculenta" width="300" height="300" class="img-acerca-de">
+                    <img src="../../img/IMG-20250404-WA0014.jpg" alt="arreglo suculenta" width="300" height="300" class="img-acerca-de">
+                    <img src="../../img/2arreglo.jpg" alt="arreglo suculenta" width="300" height="300" class="img-acerca-de">
+                </div>
+            </div>
+        </section> <!--Fin muestrario-->
+
+        <section class="reseña"><!--Inicio reseña-->
+            <article class="texto">
+                <div class="texto1">
+                    <h3 class="acerca"> Abril en Suculentas </h3> <br> <br><br> <br>
+                    <img src="../../img/4arreglo.jpg" alt="logo" width="400" height="400"> <br>
+                    <img src="../../img/IMG-20250404-WA0021.jpg" alt="logo" width="400" height="400"><br>
+                    <img src="../../img/5arreglo.jpg" alt="logo" width="400" height="400"><br>
+                </div>
+                <div class="texto2">
+                    <h3 class="acerca"> Acerca de </h3>
+                    <div class="parrafos">
+                        <p>
+                            🌸 Arreglo en jarrón de cerámica
+                            Este elegante arreglo combina suculentas de diversas formas y tonalidades en un jarrón de
+                            cerámica artesanal, ideal para interiores con estilo natural y minimalista. Cada planta
+                            resalta sobre el acabado fino del jarrón, creando una pieza decorativa perfecta para mesas,
+                            escritorios o como regalo sofisticado. Una joya viva para tu hogar.
+                        </p>
+                    </div>
+                    <div class="parrafos">
+                        <p>
+                            🌈 Arreglo en macetas de plástico coloridas
+                            Lleno de alegría y frescura, este arreglo incluye suculentas en macetas plásticas vibrantes
+                            que aportan un toque divertido y moderno a cualquier rincón. Perfectas para regalar a
+                            jóvenes, decorar escritorios creativos o espacios exteriores con energía positiva. ¡Cada
+                            color es una sonrisa verde esperando crecer!
+                        </p>
+                    </div>
+                    <div class="parrafos">
+                        <p>
+                            🎁 Arreglo en caja para regalo directo
+                            Ideal para sorprender, este conjunto de suculentas viene cuidadosamente acomodado en una
+                            caja decorativa lista para regalar. Incluye una selección especial de plantas pequeñas,
+                            musgo natural y detalles que enamoran a primera vista. Un detalle con vida propia, perfecto
+                            para celebraciones, agradecimientos o simplemente para decir “pensé en ti”.
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </section> <!--Fin reseña-->
+
+    </section>
+
+    <!--Pie de página-->
+    <footer>
+        <section class="foot">
+            <div class="texto">
+                <h4> (02) 2963-369 </h4>
+                <h4> 099 999 9999 / 098 999 9999 </h4>
+                <h4>Todos los derechos reservados</h4>
+                <h4>Quito - Ecuador </h4>
+            </div>
+        </section>
+    </footer>
+
+    </div>
+
 </body>
+
 </html>

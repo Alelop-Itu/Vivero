@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Viewport para dispositivos móviles-->
+    <title>Vivero Roseta</title>
+    <link rel="stylesheet" href="../../estilos/estilos.css"> <!--Enlace a CSS-->
+    <link rel="shortcut icon" href="../../img/icono.jpg" type="image/x-icon" href="img/icono.jpg">
+    <!--Coloca ícono en la página-->
+
+</head>
+
+<body>
+
+    <header> <!--Encabezado-->
+        <div class="contenedor">
+            <nav class="menu">
+                <a href="../../index.html" id="Inicio">Inicio</a>
+                <a href="../Arreglos/arreglos" id="arreglos">Arreglos</a>
+                <a href="#" id="productos">🍃Productos orgánicos</a>
+                <a href="#" id="novedades">Novedades</a>
+                <a href="#" id="Ubicacion">Ubicación</a>
+            </nav>
+            <div class="texto">
+                <h1 class="nombre"> Roseta <span>Vivero</span></h1> <!--Título página-->
+                <h3 class="nombre2">“Con perlita, compost y amor... tus plantas crecen mejor.” </h3>
+                <!--Subtítulo página-->
+            </div>
+        </div>
+    </header>
+
+
+    <!--Inicio sección Acerca de-->
+    <section class="main">
+        <section class="muestrario" id="muestrario"> <!--Inicio muestrario-->
+            <div class="contenedor">
+                <div class="foto"><!--Img Acerca de-->
+                    <img src="../../img/Sustrato.webp" alt="sustrato" width="300" height="300" class="img-acerca-de">
+                    <img src="../../img/sustratouniversal.webp" alt="sustratouniversal" width="300" height="300" class="img-acerca-de">
+                    <img src="../../img/terrafertil.jpg" alt="terrafertil" width="300" height="300" class="img-acerca-de">
+        
+                    <img src="../../img/humus.webp" alt="humus" width="300" height="300" class="img-acerca-de">
+                    <img src="../../img/perlita.jpg" alt="perlita" width="300" height="300" class="img-acerca-de">
+                    <img src="../../img/Vermiculita.jpg" alt="arreglo suculenta" width="300" height="300" class="img-acerca-de">
+                </div>
+            </div>
+        </section> <!--Fin muestrario-->
+
+        <section class="reseña"><!--Inicio reseña-->
+            <article class="texto">
+                <div class="texto1">
+                    <br>
+                    <img src="../../img/tarjetas.jpg" alt="logo" width="500" height="250">
+                </div>
+                <div class="texto2">
+                    <h3 class="acerca"> Opciones de pago </h3>
+                    <div class="parrafos">
+                        <p>
+                            <ol>
+                                Tarjeta de crédito <br>
+                                <hr>
+                                Tarjeta de débito<br>
+                                <hr>
+                                Efectivo<br>
+                                <hr>
+                                De Una<br>
+                            </ol>
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </section> <!--Fin reseña-->
+
+    </section>
+
+    <!--Pie de página-->
+    <footer>
+        <section class="foot">
+            <div class="texto">
+                <h4> (02) 2963-369 </h4>
+                <h4> 099 999 9999 / 098 999 9999 </h4>
+                <h4>Todos los derechos reservados</h4>
+                <h4>Quito - Ecuador </h4>
+            </div>
+        </section>
+    </footer>
+
+    </div>
+
+</body>
+
+</html>
