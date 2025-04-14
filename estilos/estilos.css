@@ -9,6 +9,7 @@
     /*Firefox*/
     -moz-box-sizing: border-box;
     /*Edge, Safari, Chrome , Opera*/
+    /*Evita que padding y el borde sumen al tamaño de todos los elementos*/
     box-sizing: border-box;
 }
 
@@ -40,6 +41,7 @@ body {
 header {
     /*anccho contenedor*/
     width: 100%;
+    max-width: 100%;
     /*fondo del contenedor*/
     background: url(../img/fondo-suculenta.jpg) #45b33b;
     /*cover para que la imagen no se deforme al cambiar tamaños*/
@@ -176,10 +178,9 @@ header .texto .nombre2 {
     position: relative;
     /*visualmente genera la sombra*/
     top: -10px;
-    box-shadow: 10px 10px 10px 10px rgba(224, 29, 175, 0.5);
-     /*Flexbox para alinear los elementos*/
+    /*Flexbox para alinear los elementos*/
     display: flex;
-   /*Permite que los elementos se ajusten a la pantalla*/
+    /*Permite que los elementos se ajusten a la pantalla*/
     flex-wrap: wrap;
     /*separación entre elementos*/
     gap: 50px;
@@ -231,21 +232,198 @@ header .texto .nombre2 {
     text-align: left;
 }
 
-Contenedor pie de página*/ footer {
+/*Contenedor pie de página*/ 
+footer {
     margin: 30px;
     padding: 10px;
 }
 
-/*Texto pie de página*/
-footer .texto {
-    margin-top: 30px;
-    padding: 15px;
-    /*posiciona elementos en fila*/
-    display: flex;
-    /*Centrar contenidos*/
-   justify-content: space-around;
-    font-size: 16px;
-    gap: 30px;
-    position: relative;
-    background-color: #a8b1a6;
+.main .ubicacion {
+    background: #80f092;
+    padding: 60px;
+    overflow: hidden;
+    width: 100%;
+    opacity: 0.8;
+}
+
+.main .ubicacion .titulo {
+    text-align: center;
+    font-size: 50px;
+    line-height: 40px;
+    font-weight: 200;
+    margin-bottom: 40px;
+}
+
+/*Colocar horizontalmente contenedor dirección*/
+.main .ubicacion .direccion {
+    float: right;
+    width: 50%;
+    text-align: right;
+    overflow: hidden;
+}
+
+/*Colocar horizontalmente contenedor horarios*/
+.main .ubicacion .horarios {
+    float: right;
+    width: 50%;
+    text-align: right;
+    overflow: hidden;
+}
+
+.main .ubicacion .direccion .calle {
+  /*Alinea correo al centro*/
+    text-align: center;
+}
+
+/*Coloca título dirección al centro */
+.main .ubicacion .direccion h4 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*Coloca títulos horario al centro*/
+.main .ubicacion .horarios h4 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*Coloca verticalmente texto dirección , visual*/
+.main .ubicacion .direccion .calle,
+.main .ubicacion .direccion .telefono {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+.main .ubicacion .direccion .correo {
+    text-align: center;
+}
+
+/*Coloca verticalmente texto horarios , visual*/
+.main .ubicacion .horarios .entre-semana,
+.main .ubicacion .horarios .fin-semana {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+.main .mapa {
+    width: 100%;
+    overflow: hidden;
+}
+
+.main .mapa iframe {
+    width: 100%;
+    max-height: 600px;
+}
+
+footer{
+    background: #e4e0e0;
+}
+
+footer .texto{
+    text-align: center;
+    padding: 15px 0;
+    color: #807b7b;
+}
+
+
+/*-----------MEDIA QUERIES-----------*/
+@media screen and (max-width: 800px){
+    header .contenedor{
+        position: static;
+        height: auto;
+    }
+
+    header .texto{
+        position: static;
+        margin: 100px 0;
+    }
+
+    header .menu{
+        text-align: center;;
+    }
+    header .menu a{
+        margin: 10px 20px;
+    }
+
+    header .texto .nombre{
+        font-size: 30px;
+    }
+
+    header .texto .nombre2{
+        font-size: 18px;
+    }
+
+    .main .menu{
+        padding-top: 300px;
+    }
+
+    .main .menu article{
+        width: 100%;
+    }
+
+    .main .muestrario .foto{
+        width: 50%;
+    }
+
+    /*Imagen suculenta*/
+    .main .reseña .texto1{
+        position: relative;
+        width: 100%;
+        transform: translate(0px, 0);
+    }
+
+    /*Texto acerca-de*/
+    .main .reseña .texto2{
+        position: relative;
+        width: 100%;
+        transform: translate(0px, 0);
+    }
+
+    .main .mapa{
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 400px){
+   
+    .main .reseña .parrafos{
+        position: relative;
+        width: 100%;
+        transform: translate(0px, 0);
+    }
+    
+    .main .reseña article h3{
+        font-size: 34px;
+        margin-bottom: 10px;
+    }
+
+    .main .reseña .texto1,
+    .main .reseña .texto2{
+        font-size: 34px;
+        margin-bottom: 10px;
+    }
+
+    .main .reseña .parrafos{
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .main .muestrario .foto,
+    .main .reseña .texto1{
+        width: 100%;
+    }
+
+    .main .ubicacion .direccion{
+        margin-bottom: 15px;
+    }
+    
+    .main .ubicacion .direccion,
+    .main .ubicacion .horarios{
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
 }

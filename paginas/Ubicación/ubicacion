@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubicación</title>
+    <link rel="stylesheet" href="../../estilos/estilos.css"> <!--Enlace a CSS-->
+    <link rel="shortcut icon" href="../../img/logo.jpg" type="image/x-icon">
+    <!--Coloca ícono en la página-->
+</head>
+
+<body>
+    <header>
+        <div class="contenedor">
+            <nav class="menu">
+                <a href="../../index.html" id="Inicio">Inicio</a>
+                <a href="../Arreglos/arreglos" id="arreglos">Arreglos</a>
+                <a href="../productos-organicos/productos" id="productos">Productos orgánicos</a>
+                <a href="#" id="novedades">Novedades</a>
+                <a href="#" id="Ubicacion">🌸Ubicación</a>
+            </nav>
+            <div class="texto">
+                <h1 class="nombre"> Roseta <span>Vivero</span></h1> <!--Título página-->
+                <h3 class="nombre2">¿Dónde encontrarnos?</h3>
+                <!--Subtítulo página-->
+            </div>
+        </div>
+    </header>
+
+    <!--Inicio Main-->
+    <section class="main">
+        <!--Inicio de ubicación-->
+        <section class="ubicacion" id="ubicacion">
+            <div class="contenedor">
+                <h3 class="titulo">Ubicación</h3>
+
+                <div class="direccion">
+                    <h4>Dirección</h4>
+                    <p class="calle">E5 S48-520</p>
+                    <p class="telefono">+593 992628980</p><br>
+                    <p class="correo">Rosetavivero@ejemplo.com</p>
+                </div>
+
+                <div class="horarios">
+                    <h4>Horarios</h4>
+                    <p class="entre-semana">Lunes a Viernes <br>7:00-21:00</p>
+                    <p class="fin-semana">Sabados y domingos <br>11:00-23:00</p>
+                </div>
+            </div>
+        </section> <!-- fin ubicacion-->
+
+        <!--Inicio mapa-->
+        <section class="mapa">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15959.106967724312!2d-78.48907849084868!3d-0.26157449579121944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d599ef02093f21%3A0x1048ccc963951009!2sVivero%20%22Blanquita%22!5e0!3m2!1ses!2sec!4v1744642787202!5m2!1ses!2sec"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section><!--Fin mapa-->
+
+    </section> <!--Fin main-->
+
+
+    <!--Pie de página-->
+    <footer>
+        <section class="foot">
+            <div class="texto">
+                <p> &COPY; Todos los derechos reservados Alejandra López 2015-2025</p>
+            </div>
+        </section>
+    </footer>
+
+
+
+    </section>
+    <!--Fin main-->
+
+</body>
+
+</html>
